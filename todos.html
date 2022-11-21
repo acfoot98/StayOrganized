@@ -1,0 +1,13 @@
+<body>
+    <h1>Todos</h1>
+    <select id="users">
+        <option value="">Select a User</option>
+    </select>
+</body>
+<script>
+    const base = "http://localhost:8083/api/";
+    const userEndPoint = base + "users";
+    
+    fetch(userEndPoint).then(r=>r.json()).then(onUserData);
+
+</script>
